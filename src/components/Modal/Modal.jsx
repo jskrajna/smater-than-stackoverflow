@@ -1,4 +1,10 @@
 import ReactDOM from 'react-dom';
+import { useState } from 'react';
+
+// icons
+import { XMarkIcon } from '@heroicons/react/24/outline'
+
+// styles
 import styled from 'styled-components';
 
 const ModalWrapper = styled.div`
@@ -20,11 +26,20 @@ const ModalContent = styled.div`
     padding: 2rem;
 `
 
-const Modal = ({ children }) => {
+const Modal = ({ children, contentCustomStyles = '' }) => {
+    const [open, setOpen] = useState(false);
+
+    const handleClick = () => {
+
+    }
+
     return (
-        ReactDOM.createPortal(
-            <ModalWrapper>
-                <ModalContent className="bg-indigo-800 rounded-xl drop-shadow-2xl">
+        open && ReactDOM.createPortal(
+            <ModalWrapper className="bg-gradient-to-r from-slate-900/[.9] to-indigo-900/[.8]">
+                <ModalContent className={`${contentCustomStyles ? contentCustomStyles : 'bg-indigo-900 rounded-xl drop-shadow-2xl text-indigo-100'}`}>
+                    <button className="absolute right-8 t-0" onClick={handleClick}>
+                        <XMarkIcon className="h-8 w-8 stroke-indigo-100"></XMarkIcon>
+                    </button>
                     {children}
                 </ModalContent>
             </ModalWrapper>, document.querySelector('body'))
