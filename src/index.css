@@ -1,3 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icon-default {
+    @apply h-8 w-8 text-transparent stroke-indigo-500 hover:stroke-indigo-400;
+  }
+  .tooltip-default {
+    @apply min-w-min text-center mx-auto w-60 text-sm left-1/2 mb-2 z-20 -translate-x-1/2 p-5 absolute bottom-full text-slate-900 bg-indigo-400 rounded-xl;
+  }
+  code {
+    @apply bg-slate-800 text-slate-100 inline-block rounded-lg drop-shadow-xl p-5
+  }
+  a {
+    @apply  text-indigo-500 inline-block
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +30,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
