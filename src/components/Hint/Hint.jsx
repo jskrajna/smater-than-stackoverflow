@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { PuzzlePieceIcon } from '@heroicons/react/24/solid'
+import { PuzzlePieceIcon } from '@heroicons/react/24/outline'
 import Tooltip from '../Tooltip';
 import Icon from '../Icon'
 
@@ -20,7 +20,7 @@ const Hint = ({ hintClick }) => {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-violet-500"></span>
                 </span>
-                <Icon component={PuzzlePieceIcon} className={`cursor-pointer h-8 w-8 hover:fill-indigo-500 ${open && 'fill-indigo-500'}`} />
+                <Icon component={PuzzlePieceIcon} className={`cursor-pointer h-8 w-8 hover:fill-indigo-500 hover:stroke-indigo-500 ${open && 'fill-indigo-500'}`} />
             </Tooltip>
         </div>
     )
