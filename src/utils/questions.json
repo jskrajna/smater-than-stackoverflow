@@ -5,7 +5,7 @@
         "references": ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce", "https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce", "https://www.geeksforgeeks.org/lodash-_-sum-method"]
     },
     {
-        "questionId": "1230233",
+        "questionId": "19867599",
         "name": "Addition2",
         "references": ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce", "https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce", "https://www.geeksforgeeks.org/lodash-_-sum-method"]
     }
