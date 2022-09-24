@@ -10,7 +10,7 @@
     @apply min-w-min text-center mx-auto w-60 text-sm left-1/2 mb-2 z-20 -translate-x-1/2 p-5 absolute bottom-full text-slate-900 bg-indigo-400 rounded-xl;
   }
   code {
-    @apply bg-slate-800 text-slate-100 inline-block rounded-lg drop-shadow-xl p-5
+    @apply bg-slate-800 text-slate-100 inline-block rounded-lg drop-shadow-xl px-5 py-4 mb-3
   }
   a {
     @apply  text-indigo-500 inline-block

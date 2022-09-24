@@ -1,4 +1,5 @@
 import { Hint } from './Hint'
-import { HintContent } from './HintContent'
+import HintTab from './HintTab'
 
-export { Hint, HintContent }
+export { Hint }
+export default HintTab;
